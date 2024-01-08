@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+footer p{
+  text-align: right;
+}
+
+.container {
+  min-height: 695px;
+  background-color: #ecf0f1;
+  display: flex;
+}
+
+.left,
+.right {
+  flex: 1;
+  position: relative;
+}
+
+.strip-1 {
+  position: relative;
+  height: 104%;
+  width: 300px;
+  top: 0;
+  right: 2rem;
+  text-align: center;
+  background-color: #e74c3c;
+}
+
+.strip-1 h1 {
+  padding: 2rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #34495e;
+}
+
+.strip-1 h1 span {
+  color: #3498db;
+  ;
+}
+
+.strip-2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 500px;
+  height: 350px;
+  background-color: #3498db;
+}
+
+.left img {
+  position: absolute;
+  top: 125px;
+  bottom: 0;
+  right: 11px;
+  width: 300px;
+  height: 450px;
+}
+
+.right {
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navbar {
+  padding: 2.5rem 0;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: top;
+  gap: 2rem;
+  right: 20px;
+}
+
+.navbar span {
+  padding: 0.5rem;
+  color: #e74c3c;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar span:hover {
+  color: #3498db;
+  cursor: pointer;
+}
+
+.navbar .join {
+  width: 80px;
+  text-align: center;
+  font-weight: 500px;
+  border-radius: 5rem;
+  background-color: #3498db;
+  color: #e74c3c !important;
+  transition: 0.3s;
+}
+
+.navbar .join:hover {
+  background-color: #2c3e50;
+}
+
+.content {
+  max-width: 650px;
+  display: grid;
+  gap: 1rem;
+}
+
+.content h1 {
+  color: #e74c3c;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+.content h1 span {
+  color: #3498db;
+}
+
+.content p {
+  color: #e74c3c;
+}
+
+.carousal {
+  position: absolute;
+  bottom: 2rem;
+  width: calc(100% - 6rem);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.carousal .slide {
+  flex: 1;
+  height: 220px;
+  border-radius: 5px;
+  width: 50%;
+  cursor: pointer;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.carousal .slide .slide__image {
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+.carousal .slide:hover .slide__image {
+  scale: 1.3;
+}
+
+.carousal .slide:nth-child(1) .slide__image {
+  background-image: url("img/pic-1.jpg");
+}
+
+.carousal .slide:nth-child(2) .slide__image {
+  background-image: url("img/pic-2.jpg");
+}
+
+.carousal .slide:nth-child(3) .slide__image {
+  background-image: url("img/pic-3.jpg");
+}
